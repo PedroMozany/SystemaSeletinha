@@ -8,6 +8,7 @@ import { CadAlunoComponent } from './professor/cad-aluno/cad-aluno.component';
 import { CadAtividadeComponent } from './professor/cad-atividade/cad-atividade.component';
 import { HomeComponent } from './professor/home/home.component';
 import { AtividadesComponent } from './aluno/atividades/atividades.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AtividadesComponent } from './aluno/atividades/atividades.component';
     CadAlunoComponent,
     CadAtividadeComponent,
     HomeComponent,
-    AtividadesComponent
+    AtividadesComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
