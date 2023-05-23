@@ -18,6 +18,7 @@ import { MenuComponent } from './menu/menu.component';
     HomeComponent,
     MenuComponent
   ],
+  exports:[MenuComponent],
   imports: [
     BrowserModule,
     AppRoutingModule
