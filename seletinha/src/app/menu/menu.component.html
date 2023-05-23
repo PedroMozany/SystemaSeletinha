@@ -15,25 +15,29 @@
   </defs>
 </svg>
 
-<div class="header">
+<div *ngIf="this.exibeMenu">
+  <div class="header">
+
+  </div>
+
+
+  <nav class="nav__cont">
+    <ul class="nav">
+      <li class="nav__items ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+          <use xlink:href="/cadastroAluno"></use>
+        </svg>
+        <a href="">Alunos</a>
+      </li>
+
+      <li class="nav__items ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <use xlink:href="/cadastroAtividade"></use>
+        </svg>
+        <a href="">Atividade</a>
+      </li>
+    </ul>
+  </nav>
 
 </div>
 
-
-<nav class="nav__cont">
-  <ul class="nav">
-    <li class="nav__items ">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-        <use xlink:href="/cadastroAluno"></use>
-      </svg>
-      <a href="">Alunos</a>
-    </li>
-
-    <li class="nav__items ">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-        <use xlink:href="/cadastroAtividade"></use>
-      </svg>
-      <a href="">Atividade</a>
-    </li>
-  </ul>
-</nav>

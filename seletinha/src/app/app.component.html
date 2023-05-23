@@ -1,2 +1,2 @@
-<app-menu></app-menu>
-<router-outlet></router-outlet>
+<app-menu [exibeMenu]="exibeMenu"></app-menu>
+<router-outlet (activate)="onRouterMenuActivate($event)"></router-outlet>

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './professor/home/home.component';
 import { CadAlunoComponent } from './professor/cad-aluno/cad-aluno.component';
 import { CadAtividadeComponent } from './professor/cad-atividade/cad-atividade.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [{
   path: '',
@@ -17,6 +18,9 @@ const routes: Routes = [{
 },{
   path: 'cadastroAtividade',
   component: CadAtividadeComponent
+},{
+  path: 'login',
+  component: LoginComponent
 },{
   path: '**',
   redirectTo: '/home'
