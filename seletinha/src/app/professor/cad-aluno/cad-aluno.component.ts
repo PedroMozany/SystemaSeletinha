@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadAlunoComponent implements OnInit {
 
+  name!: string;
+  idade!: number;
+  escola!: string;
+
   constructor() { }
 
   ngOnInit(): void {
