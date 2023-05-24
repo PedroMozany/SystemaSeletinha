@@ -23,8 +23,8 @@ export class CadProfessorComponent implements OnInit {
   matcher = new MyErrorStateMatcher();
   senha!: string;
   nome!: string;
-  turma!: string;
-  idprofessor!: string;
+  turma!: number;
+  idprofessor!: number;
 
 
   constructor(private http: HttpClient) { }

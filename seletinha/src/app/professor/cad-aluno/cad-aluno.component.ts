@@ -10,8 +10,8 @@ export class CadAlunoComponent implements OnInit {
 
   name!: string;
   idAluno!: number;
-  serie!: string;
-  turma!: string;
+  serie!: number;
+  turma!: number;
 
   constructor(private http: HttpClient) { }
 
