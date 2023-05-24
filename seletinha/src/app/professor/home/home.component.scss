@@ -3,9 +3,9 @@
   height: 381px;
   border-radius: 51px;
   background-color: #1B1B1B;
-  left: 301px;
+  left: 22%;
   position: fixed;
-  top: 147px;
+  top: 18%;
 }
 
 .card2{
@@ -16,4 +16,9 @@
   left: 967px;
   position: fixed;
   top: 147px;
+}
+
+::ng-deep body {
+  background-color:#333333;
+  opacity: 95%;
 }
