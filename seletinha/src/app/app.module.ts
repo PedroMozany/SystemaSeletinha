@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatChipsModule} from '@angular/material/chips';
 import { CadProfessorComponent } from './cad-professor/cad-professor.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { CadProfessorComponent } from './cad-professor/cad-professor.component';
     BrowserAnimationsModule,
     MatAutocompleteModule,
     ReactiveFormsModule,
-    MatChipsModule
+    MatChipsModule,
+    HttpClientModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
