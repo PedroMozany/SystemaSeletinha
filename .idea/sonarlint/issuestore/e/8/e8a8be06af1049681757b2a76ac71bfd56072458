@@ -1,0 +1,11 @@
+
+_
+java:S1192"IDefine a constant instead of duplicating this literal "registry" 4 times.(…ØÍ—
+`
+java:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(éÃ©§
+c
+java:S4488#"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Èÿ»ÿÿÿÿÿ
+^
+java:S44880"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(àÛ‰Ä
+d
+java:S4488="NReplace "@RequestMapping(method = RequestMethod.DELETE)" with "@DeleteMapping"(½¶Ôã
