@@ -31,9 +31,23 @@
     </mat-form-field>
   </div>
 
+  <div class="div6">
+    <mat-form-field  class="editMat" appearance="outline">
+      <mat-label>Turma</mat-label>
+      <input matInput [(ngModel)]="turma" >
+    </mat-form-field>
+  </div>
+
+  <div class="div6">
+    <mat-form-field  class="editMat" appearance="outline">
+      <mat-label>Id Professor</mat-label>
+      <input matInput [(ngModel)]="idprofessor" >
+    </mat-form-field>
+  </div>
+
   <div class="div4">
     <div>
-      <button mat-flat-button  class="divbtn1">Salvar</button>
+      <button mat-flat-button (click)="cadastro()" class="divbtn1">Salvar</button>
     </div>
   </div>
 

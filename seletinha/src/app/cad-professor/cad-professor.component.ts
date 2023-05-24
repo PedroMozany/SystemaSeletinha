@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroupDirective, NgForm,Validators } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
+import { HttpClient } from '@angular/common/http';
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
@@ -22,7 +23,25 @@ export class CadProfessorComponent implements OnInit {
   matcher = new MyErrorStateMatcher();
   senha!: string;
   nome!: string;
-  constructor() { }
+  turma!: string;
+  idprofessor!: string;
+
+
+  constructor(private http: HttpClient) { }
+
+  cadastro(){
+    if(this.nome != undefined || this.turma != undefined || this.idprofessor != undefined || this.senha != undefined ){
+      const url = 'https://localhost:8080/api/teacher';
+      const data = { name: this.nome,email: this.emailFormControl , password:  this.senha, team: this.turma, registry: this.idprofessor};
+      this.http.post(url,data).subscribe((e) => {
+        console.log(e);
+        return;
+      });
+      return;
+    } else{
+      return window.alert("Prencha todos os campos !!");
+    }
+  }
 
   ngOnInit(): void {
   }

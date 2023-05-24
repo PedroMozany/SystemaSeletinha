@@ -8,7 +8,7 @@ import { CadProfessorComponent } from './cad-professor/cad-professor.component';
 
 const routes: Routes = [{
   path: '',
-  redirectTo: 'home',
+  redirectTo: 'login',
   pathMatch: "full"
 },
 // {
@@ -29,7 +29,7 @@ const routes: Routes = [{
   component: CadProfessorComponent
 },{
   path: '**',
-  redirectTo: '/home'
+  redirectTo: '/login'
 }];
 
 @NgModule({
