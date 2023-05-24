@@ -5,25 +5,25 @@
 
   <div class="div2">
     <div>
-      <mat-form-field  class="editMat" >
+      <mat-form-field  class="editMat" appearance="outline">
         <mat-label>Nome</mat-label>
         <input matInput [(ngModel)]="name" >
       </mat-form-field>
     </div>
     <div>
-      <mat-form-field class="example-full-width">
+      <mat-form-field  class="editMatIdad" appearance="outline">
         <mat-label>Idade</mat-label>
-        <input matInput [(ngModel)]="idade">
+        <input matInput type="number" [(ngModel)]="idade">
       </mat-form-field>
     </div>
     <div>
-      <mat-form-field class="example-full-width">
-        <mat-label>Escola</mat-label>
-        <input matInput [(ngModel)]="escola" >
+      <mat-form-field class="editMatId" appearance="outline">
+        <mat-label>Id Aluno</mat-label>
+        <input matInput [(ngModel)]="idAluno" >
       </mat-form-field>
     </div>
     <div>
-      <mat-form-field class="example-full-width">
+      <mat-form-field  class="editMatSer" appearance="outline">
       <mat-label>Serie</mat-label>
       <mat-select>
         <mat-option value="1">3º Ano</mat-option>
@@ -38,7 +38,7 @@
     </div>
 
     <div>
-     <mat-form-field class="example-full-width">
+     <mat-form-field  class="editMatTur" appearance="outline">
       <mat-label>Turma</mat-label>
       <mat-select>
         <mat-option value="1">A</mat-option>
@@ -51,11 +51,11 @@
 
   <div class="div3">
     <div>
-      <button mat-flat-button>Cancelar</button>
+      <button mat-flat-button class="divbtn2">Cancelar</button>
     </div>
 
-    <div>
-      <button mat-flat-button>Salvar</button>
+    <div style="left: 27%;position: fixed;">
+      <button mat-flat-button  class="divbtn1">Salvar</button>
     </div>
   </div>
 

@@ -9,7 +9,7 @@ export class CadAlunoComponent implements OnInit {
 
   name!: string;
   idade!: number;
-  escola!: string;
+  idAluno!: number;
 
   constructor() { }
 

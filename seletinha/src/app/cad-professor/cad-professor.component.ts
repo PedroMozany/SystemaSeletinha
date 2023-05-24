@@ -9,23 +9,22 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   }
 }
 
+
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  selector: 'app-cad-professor',
+  templateUrl: './cad-professor.component.html',
+  styleUrls: ['./cad-professor.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class CadProfessorComponent implements OnInit {
 
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
 
   matcher = new MyErrorStateMatcher();
   senha!: string;
+  nome!: string;
   constructor() { }
 
   ngOnInit(): void {
   }
 
-
-
 }
-

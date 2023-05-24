@@ -18,6 +18,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatChipsModule} from '@angular/material/chips';
+import { CadProfessorComponent } from './cad-professor/cad-professor.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +27,9 @@ import {MatChipsModule} from '@angular/material/chips';
     CadAlunoComponent,
     CadAtividadeComponent,
     HomeComponent,
-    MenuComponent
-  ],
+    MenuComponent,
+    CadProfessorComponent
+   ],
   exports:[MenuComponent],
   imports: [
     BrowserModule,

@@ -1,7 +1,17 @@
 
+
 <div class="div1">
+  <div class="div5">
+    <span>Cadastro de Professor</span>
+  </div>
+  <div class="div6">
+    <mat-form-field  class="editMat" appearance="outline">
+      <mat-label>Nome</mat-label>
+      <input matInput [(ngModel)]="nome" >
+    </mat-form-field>
+  </div>
   <div class="div2">
-    <mat-form-field class="editMat" appearance="outline">
+    <mat-form-field class="editMat1" appearance="outline">
       <mat-label>E-mail</mat-label>
       <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
              placeholder="Ex. pat@example.com">
@@ -15,7 +25,7 @@
   </div>
 
   <div class="div3">
-    <mat-form-field  class="editMat" appearance="outline">
+    <mat-form-field  class="editMat2" appearance="outline">
       <mat-label>senha</mat-label>
       <input matInput type="password" [(ngModel)]="senha" >
     </mat-form-field>

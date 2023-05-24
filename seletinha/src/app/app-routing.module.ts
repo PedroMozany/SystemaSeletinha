@@ -4,6 +4,7 @@ import { HomeComponent } from './professor/home/home.component';
 import { CadAlunoComponent } from './professor/cad-aluno/cad-aluno.component';
 import { CadAtividadeComponent } from './professor/cad-atividade/cad-atividade.component';
 import { LoginComponent } from './login/login.component';
+import { CadProfessorComponent } from './cad-professor/cad-professor.component';
 
 const routes: Routes = [{
   path: '',
@@ -21,6 +22,9 @@ const routes: Routes = [{
 },{
   path: 'login',
   component: LoginComponent
+},{
+  path: 'cadastroProfessor',
+  component: CadProfessorComponent
 },{
   path: '**',
   redirectTo: '/home'

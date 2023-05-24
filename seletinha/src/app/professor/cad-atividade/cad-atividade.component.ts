@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild} from '@angular/core';
-import { UntypedFormControl } from '@angular/forms';
+import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 import {COMMA, ENTER} from '@angular/cdk/keycodes';
 import {MatAutocompleteSelectedEvent} from '@angular/material/autocomplete';
@@ -13,7 +13,7 @@ import {MatChipInputEvent} from '@angular/material/chips';
 })
 export class CadAtividadeComponent implements OnInit {
 
-  alunosSelect = new UntypedFormControl('');
+  alunosSelect = new FormControl('');
   allAlunos: string[] = ['Ana', 'Marcos', 'João', 'Marcelo', 'Marcela', 'Pedro', 'Lucas'];
 
 
